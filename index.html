@@ -149,7 +149,7 @@
     <div class="sheets-preview" id="sheetsPreview"></div>
   </div>
 
-  <footer>Maths Keyword Matcher &nbsp;·&nbsp; Data stored in your browser only &nbsp;·&nbsp; Nothing sent to any server</footer>
+  <!--<footer>Maths Keyword Matcher &nbsp;·&nbsp; Data stored in your browser only &nbsp;·&nbsp; Nothing sent to any server</footer>-->
 </div>
 
 <script>
@@ -342,10 +342,10 @@ function loadFile() {
       DB = unique;
       setPill(true, DB.length, sheetsSeen);
 
-      statusEl.innerHTML = '<p class="status-msg status-ok">✓ ' + DB.length + ' keywords saved from ' + sheetsSeen.length + ' sheet' + (sheetsSeen.length !== 1 ? 's' : '') + '. Loads automatically every visit — no need to upload again.</p>';
+      /*statusEl.innerHTML = '<p class="status-msg status-ok">✓ ' + DB.length + ' keywords saved from ' + sheetsSeen.length + ' sheet' + (sheetsSeen.length !== 1 ? 's' : '') + '. Loads automatically every visit — no need to upload again.</p>';*/
 
       var preview = document.getElementById('sheetsPreview');
-      preview.innerHTML = sheetsSeen.map(function(s){ return '<span class="sheet-tag">' + esc(s.name) + ' · ' + s.count + '</span>'; }).join('');
+      /*preview.innerHTML = sheetsSeen.map(function(s){ return '<span class="sheet-tag">' + esc(s.name) + ' · ' + s.count + '</span>'; }).join('');*/
 
       showResult('<div class="result-empty"><p>Database ready. Enter a topic above to search.</p></div>');
 
