@@ -343,7 +343,8 @@ function loadFile() {
       setPill(true, DB.length, sheetsSeen);
 
       /*statusEl.innerHTML = '<p class="status-msg status-ok">✓ ' + DB.length + ' keywords saved from ' + sheetsSeen.length + ' sheet' + (sheetsSeen.length !== 1 ? 's' : '') + '. Loads automatically every visit — no need to upload again.</p>';*/
-
+      statusEl.innerHTML = '<p class="status-msg status-ok">✓ ' + DB.length + ' keywords saved successfully.</p>';
+      setTimeout(function(){ statusEl.innerHTML = ''; }, 3000);
       var preview = document.getElementById('sheetsPreview');
       /*preview.innerHTML = sheetsSeen.map(function(s){ return '<span class="sheet-tag">' + esc(s.name) + ' · ' + s.count + '</span>'; }).join('');*/
 
