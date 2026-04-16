@@ -258,7 +258,7 @@ function onFileChosen(input) {
 function loadFile() {
   if (!selectedFile) return;
   var statusEl = document.getElementById('uploadStatus');
-  statusEl.innerHTML = '<p class="status-msg status-info">Reading file…</p>';
+  //statusEl.innerHTML = '<p class="status-msg status-info">Reading file…</p>';
 
   var reader = new FileReader();
   reader.onload = function(e) {
